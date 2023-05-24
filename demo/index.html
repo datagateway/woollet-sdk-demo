@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <title>Woollet Demo</title>
+    <script type="module" src="https://cdn.woollet.net/woollet.min.js"></script>
+  </head>
+  <body>
+    <h1>Mazda Woollet Demo</h1>
+    <div>
+      <!-- {/* System Status */} -->
+      <div>
+        <h2>System Status</h2>
+        <button id='system-btn'>Check System Status</button>
+        <br />
+        <pre id="system-op"></pre>
+      </div>
+
+      <hr />
+
+      <!-- {/*  Wallet Creation */} -->
+      <div>
+        <h2>Wallet Create</h2>
+        <br />
+        <!-- {/* Sign up */} -->
+        <h4>Sign up</h4>
+        <p>Name</p>
+        <input id='signup-name' />
+        <p>Email</p>
+        <input id='signup-email' />
+        <p>Password</p>
+        <input id='signup-pass' />
+        <p>Card</p>
+        <input id='signup-card' />
+        <p>Role</p>
+        <input id='signup-role' />
+        <br />
+        <br />
+        <button id='signup-btn'>Sign up</button>
+        <br />
+        <pre id="signup-op"></pre>
+        <br />
+        <hr />
+
+        <!-- {/* Sign in  */} -->
+        <h4>Sign in</h4>
+        <p>Email</p>
+        <input id='signin-email' />
+        <p>Password</p>
+        <input id='signin-pass' />
+        <br />
+        <br />
+        <button id='signin-btn'>Sign in</button>
+        <br />
+        <pre id="signin-op"></pre>
+        <br />
+
+        <!-- {/* wallet ID  */} -->
+        <h2>Wallet ID</h2>
+        <button id='did-btn'>Get Wallet ID</button>
+        <br />
+        <pre id="did-op"></pre>
+
+
+        <!-- {/* profile  */} -->
+        <h2>Check Profile</h2>
+        <button id='profile-btn'>Check Profile</button>
+        <br />
+        <pre id="profile-op"></pre>
+      </div>
+
+      <hr />
+
+      <!-- {/* Load VC */} -->
+      <div>
+        <h2> Load VC</h2>
+        <button id='load-vc-btn'>Load VC</button>
+        <br />
+        <pre id="load-vc-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* VC Proof Request  */} -->
+      <div>
+        <h2>VC Request</h2>
+         <p>Wallet ID</p>
+        <input id='request-did' />
+        <button id='vc-request-btn'>Request</button>
+        <br />
+        <pre id="request-op"></pre>
+
+      </div>
+      <hr />
+
+      <!-- {/* VC Proof List  */} -->
+      <div>
+        <h2>VC Proof List </h2>
+        <button id='proof-list-btn'>List</button>
+        <br />
+        <pre id="proof-list-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* VC Result */} -->
+      <div>
+        <h2> VC Result</h2>
+        <p>PEID</p>
+        <input id='peid-result' />
+        <button id='vc-result-btn'>Check Result</button>
+        <br />
+        <pre id="vc-result-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* Connection List */} -->
+      <div>
+        <h2> Connection List</h2>
+        <button id='conn-list-btn'>List</button>
+        <br />
+        <pre id="conn-list-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* Connection Get */} -->
+      <div>
+        <h2> Connection Get</h2>
+           <p>Connection ID</p>
+        <input id='conn-id' />
+        <button id='conn-get-btn'>GET</button>
+        <br />
+        <pre id="conn-get-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* Token Balance */} -->
+      <div>
+        <h2>Token Balance</h2>
+        <button id='eth-bal-btn'>Check Balance</button>
+        <br />
+        <pre id="eth-bal-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* Token Feucet */} -->
+      <div>
+        <h2>Token Faucet</h2>
+        <button id='faucet-btn'>Faucet</button>
+        <br />
+        <pre id="faucet-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* SBY Feucet */} -->
+      <div>
+        <h2>SBY Faucet</h2>
+        <button id='sby-btn'>SBY Faucet</button>
+        <br />
+        <pre id="sby-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* SBY Balance */} -->
+      <div>
+        <h2>SBY Balance</h2>
+        <button id='sby-bal-btn'>SBY Faucet</button>
+        <br />
+        <pre id="sby-bal-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* Mint NFT */} -->
+      <div>
+        <h2>Mint NFT</h2>
+        <p>Image</p>
+        <input id='nft-img' />
+        <button id='nft-mint-btn'>Mint</button>
+        <br />
+        <pre id="nft-mint-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* View NFT */} -->
+      <div>
+        <h2>View NFT</h2>
+        <button id='nft-browser-btn'>Check NFTs</button>
+        <br />
+        <pre id="nft-browser-op"></pre>
+      </div>
+      <hr />
+
+      <!-- {/* Transfer NFT */} -->
+      <div>
+        <h2>Transfer NFT</h2>
+        <p>Target Wallet Address</p>
+        <input id='target-wallet' />
+        <p>Token ID</p>
+        <input id='nft-token-id' />
+        <br />
+        <br />
+        <button id='nft-trans-btn'>Transfer</button>
+        <br />
+        <pre id="nft-trans-op"></pre>
+      </div>
+      <hr />
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
+
